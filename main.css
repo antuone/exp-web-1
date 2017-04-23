@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+}
+#matrix {
+    overflow: hidden;
+}
+#matrix ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 410%;
+}
+#matrix ul li {
+    float: left;
+}
+#matrix ul li:nth-child(1), .menu .home {
+    background-color: seagreen;
+}
+#matrix ul li:nth-child(2), .menu .news {
+    background-color: rebeccapurple;
+}
+#matrix ul li:nth-child(3), .menu .contact {
+    background-color: darkorange;
+}
+#matrix ul li:nth-child(4), .menu .about {
+    background-color: darkred;
+}
+#left {
+    left: 0;
+}
+#right {
+    right: 0;
+}
+#left, #right {
+    position: fixed;
+    top: 50%;
+    cursor: pointer;
+    z-index: 999;
+}
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+    z-index: 999;
+}
+.menu li {
+    list-style-type: none;
+    float: left;
+    width: 25%;
+}
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 30px;
+}
+.menu li a:hover {
+    color: yellow;
+}
+.content {
+    padding: 50px 0px 0px 70px;
+}
+@media (max-width: 600px) {
+    .menu li a {
+        height: 100px;
+    }
+    .content {
+        padding: 150px 0px 0px 70px;
+    }
+}
